@@ -6,6 +6,9 @@ import Automation from "./components/automation";
 import Process from "./components/process";
 import WhyScaleSpace from "./components/whyscalespace";
 import About from "./components/about";
+import Work from "./components/work";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       <Process />
       <WhyScaleSpace />
       <About />
+      <Work />
+      <Contact />
+      <Footer />
     </main>
   );
 }

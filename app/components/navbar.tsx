@@ -32,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <nav
-        className="mx-auto flex h-[76px] max-w-[1160px] items-center justify-between px-5 sm:px-8"
+        className="mx-auto flex h-[58px] max-w-[1160px] items-center justify-between px-5 sm:px-8"
         aria-label="Main navigation"
       >
         {/* BRAND */}
@@ -43,7 +43,6 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-full border border-lime-200/30 text-sm text-lime-200 transition-all duration-300 group-hover:border-lime-200 group-hover:bg-lime-200/10">
-            S
           </span>
 
           <span className="text-[15px] font-medium tracking-[-0.04em] text-[#f2f0e9]">
@@ -67,7 +66,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className="group hidden min-h-[38px] items-center gap-3 rounded-md bg-[#f2f0e9] px-4 text-[11px] font-medium text-[#111411] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#d4f58a] sm:inline-flex"
+          className="group hidden min-h-[38px] items-center gap-3 rounded-md bg-[#f2f0e9] px-4 text-[11px] font-medium text-[#111411] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#d4f58a] md:inline-flex"
         >
           Start a project
           <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
@@ -81,7 +80,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen((open) => !open)}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 text-white/80 transition-colors hover:border-lime-200/40 hover:text-lime-200 sm:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 text-white/80 transition-colors hover:border-lime-200/40 hover:text-lime-200 md:hidden"
         >
           <span className="text-xl leading-none">
             {menuOpen ? "×" : "☰"}
@@ -91,7 +90,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`grid overflow-hidden transition-all duration-300 sm:hidden ${
+        className={`grid overflow-hidden transition-all duration-300 md:hidden ${
           menuOpen ? "grid-rows-[1fr] border-t border-white/10" : "grid-rows-[0fr]"
         }`}
       >

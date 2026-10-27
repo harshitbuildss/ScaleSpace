@@ -21,7 +21,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-[1120px]">
         {/* Hero copy */}
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-4xl text-center sm:pt-7">
           <div className="ss-hero-eyebrow mx-auto">
             <span className="ss-hero-dot" />
             AI AUTOMATION · DIGITAL PRODUCTS · GROWTH
